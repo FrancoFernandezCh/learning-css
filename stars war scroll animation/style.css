@@ -20,9 +20,19 @@ body {
   font-weight: bold;
   text-align: justify;
   position: relative;
+  animation: scroll 80s linear forwards;
 }
 
 .scroll-text h1,
 .scroll-text h2 {
   text-align: center;
+}
+
+@keyframes scroll {
+  from {
+    top: 0;
+  }
+  to {
+    top: -7500px;
+  }
 }
